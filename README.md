@@ -7,4 +7,4 @@
 | [pptx-corporate-style](pptx-corporate-style/SKILL.md) | 발표자료 |
 | [blog-post-chirpy](blog-post-chirpy/SKILL.md) | 기술 블로그 글 |
 | [study-note-style](study-note-style/SKILL.md) | 개인 공부·학습 노트 |
-| [skill-finder](skill-finder/SKILL.md) | 지금 작업에 맞는 스킬 추천 |
+| [shc-skill-finder](shc-skill-finder/SKILL.md) | 지금 작업에 맞는 스킬 추천 |
