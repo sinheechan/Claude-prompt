@@ -26,14 +26,38 @@ description: 희찬의 파이썬 코딩 스타일. 파이썬 코드를 새로 �
 
 # 1) import — 표준 라이브러리 / 서드파티 / 내 모듈 순
 # 2) 상수 — 경로, 설정값은 파일 상단 대문자 상수로
-# 3) 함수 — 위에서 아래로 실행 순서대로 배치
-# 4) main — if __name__ == "__main__": 에서 흐름이 한눈에 보이게
+# 3) write_log_print — 상수 바로 아래, 모든 파일에 매번 넣는다
+# 4) 함수 — 위에서 아래로 실행 순서대로 배치
+# 5) main — if __name__ == "__main__": 에서 흐름이 한눈에 보이게
 ```
 
 ## 주석·로그
 
 - 주석은 한국어로, **왜** 이렇게 했는지 위주. 코드가 뭘 하는지는 코드로 보이게.
-- `print` 대신 `logging` 사용, 단계마다 처리 건수를 남긴다 (예: `"로드 완료: 12,340행"`).
+- `logging`은 쓰지 않는다. 출력은 `write_log_print()`로 하고, 단계마다 처리 건수를 남긴다 (예: `"로드 완료: 12,340행"`).
+- 로그 파일은 **실행한 진입 파일 이름**으로 생긴다.
+  - 단독 실행: `getdata_from_y.py` → `getdata_from_y.log`
+  - `main.py`로 여러 파일을 묶어 실행: 전부 `main.log` 하나에 모임
+  - 각 줄에 출력한 py 파일명이 찍히므로 어느 파일의 로그인지 구분된다.
+- 모든 .py 파일에 아래 함수를 그대로 넣는다.
+
+```python
+import sys
+from datetime import datetime
+from pathlib import Path
+
+# 진입 파일 기준으로 로그 생성 → main.py로 묶여 실행되면 모든 출력이 main.log에 모임
+LOG_PATH = Path(sys.argv[0]).resolve().with_suffix(".log")
+
+
+def write_log_print(*args):
+    """print한 내용을 화면에 출력하고 로그 파일에도 남김"""
+    msg = " ".join(str(a) for a in args)
+    print(msg)
+    line = f"{datetime.now():%Y-%m-%d %H:%M:%S} [{Path(__file__).name}] {msg}\n"
+    with LOG_PATH.open("a", encoding="utf-8") as f:
+        f.write(line)
+```
 
 ## 데이터 처리 습관
 
