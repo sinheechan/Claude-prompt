@@ -1,0 +1,51 @@
+---
+name: blog-post-chirpy
+description: GitHub Pages 기술 블로그(Jekyll Chirpy 테마) 글을 마크다운으로 작성할 때 사용. 공부 정리, 프로젝트 회고, 트러블슈팅 기록을 블로그 포스트로 만들 때.
+---
+
+# 기술 블로그 포스트 (Jekyll Chirpy)
+
+## 파일명
+
+`_posts/YYYY-MM-DD-영문-슬러그.md` (예: `2026-11-07-airflow-dag-retry.md`)
+
+## 프런트매터
+
+```yaml
+---
+title: "제목은 검색될 키워드를 앞에"
+date: YYYY-MM-DD HH:MM:SS +0900
+categories: [대분류, 소분류]   # 예: [Data Engineering, Airflow]
+tags: [소문자, 태그, 3~5개]
+description: 검색 결과에 보일 한 줄 요약
+math: false
+mermaid: false
+---
+```
+
+- `categories`는 최대 2단계, 기존 카테고리를 우선 재사용
+- 수식이 있으면 `math: true`, 다이어그램이 있으면 `mermaid: true`
+
+## 본문 구조
+
+1. **들어가며** — 왜 이 글을 쓰는지 2–3줄
+2. **본문** — `##` 단위로 나누고, 코드는 언어 지정 코드블록
+3. **트러블슈팅** (해당 시) — 에러 메시지 → 원인 → 해결
+4. **정리** — 핵심 3줄 요약
+5. **참고** — 링크 목록
+
+## 문체·형식
+
+- 블로그는 **"~다" 평서체** (공식 문서의 개조식과 다름)
+- 팁·주의는 Chirpy 프롬프트 블록 사용:
+
+```markdown
+> 실행 전에 가상환경을 꼭 활성화한다.
+{: .prompt-tip }
+
+> 운영 DB에 바로 실행하지 않는다.
+{: .prompt-warning }
+```
+
+- 이미지는 `/assets/img/posts/<슬러그>/` 아래에 두고 alt 텍스트를 단다
+- 회사·발주처 관련 내용은 일반화해서 쓰고 실명·내부 수치는 넣지 않는다
