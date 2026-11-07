@@ -65,7 +65,7 @@ description: 사용자가 shc-skill-finder를 부르고 지금 상황이나 질�
 
 - 공식: anthropics/skills (docx, pdf, pptx, xlsx, skill-creator, frontend-design, mcp-builder, webapp-testing)
 - 많이 언급되는 묶음: obra/superpowers (test-driven-development, systematic-debugging, subagent-driven-development)
-- 내 스킬: github.com/sinheechan/Claude-skills (python-coding-style, report-doc-style, pptx-corporate-style, blog-post-chirpy, study-note-style)
+- 내 프롬프트: github.com/sinheechan/Claude-prompt (github-claude-python-style, github-claude-report-doc, github-claude-pptx-slides, github-claude-blog-post, github-claude-study-note)
 
 ## 설치 위치
 

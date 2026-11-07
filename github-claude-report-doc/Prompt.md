@@ -1,5 +1,5 @@
 ---
-name: report-doc-style
+name: github-claude-report-doc
 description: 공식 문서 작성 스타일. 사업계획서, 과제 결과·진도 보고서, 제안서, 기술 문서, 회의록처럼 회사·발주처에 제출하는 문서를 쓰거나 다듬을 때 사용.
 ---
 

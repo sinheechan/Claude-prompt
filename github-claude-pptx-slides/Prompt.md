@@ -1,5 +1,5 @@
 ---
-name: pptx-corporate-style
+name: github-claude-pptx-slides
 description: 회사용 발표자료 디자인 규칙. 슬라이드, PPT, 발표자료, 보고용 덱을 만들거나 수정할 때 사용.
 ---
 
@@ -38,7 +38,7 @@ description: 회사용 발표자료 디자인 규칙. 슬라이드, PPT, 발표�
 
 ## 문체
 
-- 문서와 같이 개조식 명사형 종결 ("~함", "~완료"). 자세한 규칙은 report-doc-style 스킬을 따른다.
+- 문서와 같이 개조식 명사형 종결 ("~함", "~완료"). 자세한 규칙은 github-claude-report-doc 프롬프트를 따른다.
 
 ## 채팅 답변 형식 (이 스킬의 다른 규칙보다 우선 적용)
 

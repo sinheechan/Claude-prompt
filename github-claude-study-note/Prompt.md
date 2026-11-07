@@ -1,5 +1,5 @@
 ---
-name: study-note-style
+name: github-claude-study-note
 description: 희찬의 개인 공부 정리 스타일. SQL·ML·딥러닝·통계·파이썬 등 무언가를 공부하거나 개념을 정리·설명받을 때, 자격증 요약본이나 학습 노트를 만들거나 다듬을 때 사용.
 ---
 

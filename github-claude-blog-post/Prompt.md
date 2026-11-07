@@ -1,5 +1,5 @@
 ---
-name: blog-post-chirpy
+name: github-claude-blog-post
 description: GitHub Pages 기술 블로그(Jekyll Chirpy 테마) 글을 마크다운으로 작성할 때 사용. 공부 정리, 프로젝트 회고, 트러블슈팅 기록을 블로그 포스트로 만들 때.
 ---
 

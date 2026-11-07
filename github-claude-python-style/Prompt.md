@@ -1,5 +1,5 @@
 ---
-name: python-coding-style
+name: github-claude-python-style
 description: 희찬의 파이썬 코딩 스타일. 파이썬 코드를 새로 작성하거나 리뷰·리팩터링할 때, 데이터 파이프라인·ETL·ML 스크립트를 만들 때 사용.
 ---
 
